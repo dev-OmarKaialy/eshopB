@@ -1,4 +1,5 @@
 import 'package:eshop_b/core/constants/colors.dart';
+import 'package:eshop_b/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 final lightTheme = ThemeData(
@@ -15,7 +16,11 @@ final lightTheme = ThemeData(
     scrimColor: Colors.black.withOpacity(0.7),
   ),
   dividerColor: Colors.black,
-  
+  textTheme: TextTheme(
+    titleLarge: Styles.textStyle24.copyWith(),
+    titleMedium: Styles.textStyle18.copyWith(),
+    titleSmall: Styles.textStyle16.copyWith(),
+  ),
   colorScheme: const ColorScheme.light(
     background: Colors.white,
     primary: ColorPlatte.kPrimaryColor,
@@ -50,11 +55,11 @@ final darkTheme = ThemeData(
   ),
   colorScheme: const ColorScheme.dark(
     onBackground: Colors.white,
-    background:  ColorPlatte.kBlackColor,
-    primary:  ColorPlatte.kPrimaryColor,
+    background: ColorPlatte.kBlackColor,
+    primary: ColorPlatte.kPrimaryColor,
   ),
   bottomSheetTheme: BottomSheetThemeData(
-    backgroundColor:  ColorPlatte.kBlackColor,
+    backgroundColor: ColorPlatte.kBlackColor,
     // .withOpacity(0.7),
     elevation: 6.0,
     shadowColor: Colors.black,
